@@ -1,0 +1,67 @@
+Last login: Sun Sep  8 00:15:16 on console
+995384@995384-student-FVFG33YSQ6L3 ~ % date
+Mon Sep  9 11:40:34 EDT 2024
+995384@995384-student-FVFG33YSQ6L3 ~ % ls
+Applications	Desktop		Documents	Downloads	Library		Movies		Music		Pearson		Pictures	Public
+995384@995384-student-FVFG33YSQ6L3 ~ % Desktop 
+zsh: command not found: Desktop
+995384@995384-student-FVFG33YSQ6L3 ~ % cd Desktop
+995384@995384-student-FVFG33YSQ6L3 Desktop % ls
+Terminal 		terminal_practice
+995384@995384-student-FVFG33YSQ6L3 Desktop % cd terminal_practice
+995384@995384-student-FVFG33YSQ6L3 terminal_practice % ls
+995384@995384-student-FVFG33YSQ6L3 terminal_practice % cd ..
+995384@995384-student-FVFG33YSQ6L3 Desktop % ls
+Terminal 		terminal_practice
+995384@995384-student-FVFG33YSQ6L3 Desktop % mkdir quiz
+995384@995384-student-FVFG33YSQ6L3 Desktop % ls
+Terminal 		quiz			terminal_practice
+995384@995384-student-FVFG33YSQ6L3 Desktop % cd quiz
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+995384@995384-student-FVFG33YSQ6L3 quiz % echo move_me.txt
+move_me.txt
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+995384@995384-student-FVFG33YSQ6L3 quiz % echo copy_me.txt
+copy_me.txt
+995384@995384-student-FVFG33YSQ6L3 quiz % mkdir destination 
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+destination
+995384@995384-student-FVFG33YSQ6L3 quiz % mv move_me.txt destination 
+mv: rename move_me.txt to destination/move_me.txt: No such file or directory
+995384@995384-student-FVFG33YSQ6L3 quiz % mv move_me.txt/desination
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+destination
+995384@995384-student-FVFG33YSQ6L3 quiz % mv copy_me.txt/destination 
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+destination
+995384@995384-student-FVFG33YSQ6L3 quiz % ls destination 
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+destination
+995384@995384-student-FVFG33YSQ6L3 quiz % cd destination
+995384@995384-student-FVFG33YSQ6L3 destination % ls
+995384@995384-student-FVFG33YSQ6L3 destination % cp move_me.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+995384@995384-student-FVFG33YSQ6L3 destination % ls
+995384@995384-student-FVFG33YSQ6L3 destination % ls destination 
+ls: destination: No such file or directory
+995384@995384-student-FVFG33YSQ6L3 destination % rm move_me.txt
+rm: move_me.txt: No such file or directory
+995384@995384-student-FVFG33YSQ6L3 destination % cd destination 
+cd: no such file or directory: destination
+995384@995384-student-FVFG33YSQ6L3 destination % ls 
+995384@995384-student-FVFG33YSQ6L3 destination % less destination 
+destination: No such file or directory
+995384@995384-student-FVFG33YSQ6L3 destination % ls
+995384@995384-student-FVFG33YSQ6L3 destination % cd ..
+995384@995384-student-FVFG33YSQ6L3 quiz % ls
+destination
+995384@995384-student-FVFG33YSQ6L3 quiz % cd destination 
+995384@995384-student-FVFG33YSQ6L3 destination % ls
+995384@995384-student-FVFG33YSQ6L3 destination % date
+Mon Sep  9 11:50:15 EDT 2024
+995384@995384-student-FVFG33YSQ6L3 destination % 
