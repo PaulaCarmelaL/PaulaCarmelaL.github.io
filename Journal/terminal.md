@@ -1,6 +1,7 @@
 This is my Journal 
 
-Summarize the importance of each of these tools 
+Summarize the importance of each of these tools
+ 
 -Terminal:lets users interact with their computers in a direct way through commands. 
 -GIT:allows users to manage and track chnages in the codes
 -VIM:very effiecient when it comes to text-related editing tasks
