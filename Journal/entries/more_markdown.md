@@ -19,3 +19,10 @@
 [this is the text that is displayed](www.example.com)
 ![this is the text](https://cameronmcefee.com/img/work/the-octocat/original.jpg)
 
+## My favorite cartoon cats 
+
+|Name    | Facts        |
+| -----  | ---------    |
+|Garfield| Likes Lasagna|
+|Tom     | Likes Jerry  |
+|Meowth  | That's right!|
