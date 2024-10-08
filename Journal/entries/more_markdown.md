@@ -17,5 +17,5 @@
 # here's a link 
 
 [this is the text that is displayed](www.example.com)
-![this is the text](https://www.cdc.gov/healthy-pets/media/images/2024/04/GettyImages-598175960-cute-dog-headshot.jpg)
- 
+![this is the text](https://cameronmcefee.com/img/work/the-octocat/original.jpg)
+
