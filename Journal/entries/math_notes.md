@@ -8,6 +8,6 @@
 
 | If f'(x) is...  | ...then f(x) is |
 |    ---------    |  ------------   |
-| Positive f'(x)>0| increaisng      |
+| Positive f'(x)>0| increasing      |
 | Negative f'(x)<0| decreasing      |
 | Zero f'(x)=0    | constant        |
