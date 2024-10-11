@@ -2,6 +2,6 @@
 
 ## Subject: Graphs of Derivatives
 
-![Image of a gragh](https://calcworkshop.com/wp-content/uploads/graph-of-derivative-to-original-function.png)
+![Image of a gragh](https://calcworkshop.com/wp-content/uploads/how-to-find-original-function-from-derivative-graph.png)
 
 
