@@ -16,6 +16,10 @@ The relationship between a function and the graph of its derivative is such that
 | Negative f'(x)<0| decreasing      |
 | Zero f'(x)=0    | constant        |
 
+## Formulas 
+
+![Image of a formula]{https://media.geeksforgeeks.org/wp-content/uploads/20230927121402/Derivative-Rule-Formula.png}
+
 ### Derivative Formula
 
 $$f'(x)= \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}$$ 
