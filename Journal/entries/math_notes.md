@@ -16,5 +16,6 @@ The relationship between a function and the graph of its derivative is such that
 | Negative f'(x)<0| decreasing      |
 | Zero f'(x)=0    | constant        |
 
-f'(x)=\lim_{h \to 0} f(x+h)-f(X)/h 
+f'(x)= \lim_{h \to 0} \frac{x}{h}
+
 
