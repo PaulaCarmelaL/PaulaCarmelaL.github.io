@@ -4,9 +4,9 @@
  
 The relationship between a function and the graph of its derivative is such that the slope of a function helps determine the graph of the derivative. If the function f(x) has a positive slope, then the derivative f'(x), x>0 and the slope is negative then the derivative f'(x), x<0.
 
-## Subject: Graphs of Derivatives
+## Subject: Graphs of Derivative 
 
-![Image of a gragh](https://cdn-kibhp.nitrocdn.com/jEEPvLapPIIMpocrSEssjOggqosSDqrJ/assets/images/optimized/rev-4796307/mathhints.com/wp-content/uploads/2024/09/Original-First-Second.png)
+![Image of a gragh](https://images.nagwa.com/figures/explainers/179159061792/2.svg)
 
 ## Chart on f'(x) to f(x)
 
