@@ -6,4 +6,6 @@ In my journal, i will write about:
 
 # Here are my journal entries
 
-- [My journey learning the terminal](terminal.md)  
+- [My journey learning the terminal](terminal.md)
+- [My WordPress Reflection](wordpress.md) 
+ 
