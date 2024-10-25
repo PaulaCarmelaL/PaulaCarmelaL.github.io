@@ -8,6 +8,6 @@ In my journal, i will write about:
 
 - [My journey learning the terminal](terminal.md)
 - [My WordPress Reflection](wordpress.md) 
-- [Math notes](entries/mathnotes.md)
+- [Math notes](entries/math_notes.md)
 - [More markdown](entries/more_markdown.md)
  
