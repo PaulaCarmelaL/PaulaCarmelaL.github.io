@@ -1,0 +1,11 @@
+body {
+        background-color:rgba(232,239,250);
+        color:rgba(0,0,0);
+                }
+header {
+        background-color:rgba(202,222,252);
+                }
+th,td,table {
+        border:1px solid;
+        border-collapse: collapse;
+                }
