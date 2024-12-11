@@ -1,0 +1,15 @@
+body { 
+	background:rgba(244,238,255); 
+} 
+nav { 
+	background-color:#dcd6f7; height:80px; width:150px;
+	}
+th,td {
+	border:1px solid;
+	}
+.time {
+	background-color:#dcd6f7;
+	}
+#copyright {
+	color:DarkRed;
+	}
