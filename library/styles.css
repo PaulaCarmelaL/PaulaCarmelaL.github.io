@@ -9,7 +9,15 @@ th,td {
 	}
 .time {
 	background-color:#dcd6f7;
+	font-family:"Courier New","Lucida Console";
 	}
 #copyright {
 	color:DarkRed;
+	font-family:"impact","porcine";
+	}
+#table {
+	font-family:"Courier New","Lucida Console";
+	}
+.valid {
+	text-align:center;
 	}
