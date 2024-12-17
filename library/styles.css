@@ -1,10 +1,8 @@
 body { 
-	background:rgba(244,238,255);
-	text-align:center; 
+	background:rgba(244,238,255); 
 } 
 nav { 
 	background-color:#dcd6f7; height:80px; width:150px;
-	text-align: center;
 	}
 th,td {
 	border:1px solid;
@@ -13,12 +11,20 @@ th,td {
 	background-color:#dcd6f7;
 	font-family:"Courier New","Lucida Console";
 	}
+header {
+	text-align: center;
+	text-transform:Uppercase;
+	}
 #copyright {
 	color:DarkRed;
 	font-family:"impact","porcine";
 	text-align: center;
 	}
-#table {
+#rights {
+	color:DarkRed;
+        font-family:"impact","porcine";
+        text-align: center;
+	}
+#tabletitle {
 	font-family:"Courier New","Lucida Console";
-	text-align: center;
 	}
