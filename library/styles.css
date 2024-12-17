@@ -1,8 +1,10 @@
 body { 
-	background:rgba(244,238,255); 
+	background:rgba(244,238,255);
+	text-align:center; 
 } 
 nav { 
 	background-color:#dcd6f7; height:80px; width:150px;
+	text-align: center;
 	}
 th,td {
 	border:1px solid;
@@ -14,10 +16,9 @@ th,td {
 #copyright {
 	color:DarkRed;
 	font-family:"impact","porcine";
+	text-align: center;
 	}
 #table {
 	font-family:"Courier New","Lucida Console";
-	}
-.valid {
-	text-align:center;
+	text-align: center;
 	}
