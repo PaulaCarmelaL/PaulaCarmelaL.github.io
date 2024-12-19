@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>GRIDS!</title>
+	<script>"js/init.js"</script>
+<style>
+.grid {
+	display:grid;
+	grid-template-rows: repeat(8,1fr);
+	grid-template-columns: repeat(8,1fr);
+	height:80vh;
+	text-align:center;
+	font-size:4em;
+	}
+.box1 {
+	grid-column-start:1;
+	grid-column-end:6;
+	grid-row-start:1;
+	grid-row-end:3;
+	background-color:green;
+	border:white solid 3px;
+	}
+.box2 {
+	grid-column-start:6;
+        grid-column-end:8;
+        grid-row-start:1;
+        grid-row-end:5;
+        background-color:green;
+	border:white solid 3px;
+	}
+.box3 {
+	grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:green;
+        border:white solid 3px;
+	}
+.box4 {
+	grid-column-start:3;
+        grid-column-end:6;
+        grid-row-start:3;
+        grid-row-end:5;
+        background-color:green;
+        border:white solid 3px;
+	}
+.box5 {
+	grid-column-start:3;
+        grid-column-end:8;
+        grid-row-start:5;
+        grid-row-end:8;
+        background-color:green;
+        border:white solid 3px;
+	}
+</style>
+</head>
+<body>
+	<div class="grid">
+		<div class="box1">A</div>
+		<div class="box2">B</div>
+		<div class="box3">C</div>
+		<div class="box4">D</div>
+		<div class="box5">E</div>
+	</div>
+</body>
+</html>
