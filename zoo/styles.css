@@ -1,5 +1,5 @@
 body {
-        background-color:rgba(232,239,250);
+	background-color:rgba(202,222,252);
         color:rgba(0,0,0);
                 }
 header {
@@ -9,3 +9,17 @@ th,td,table {
         border:1px solid;
         border-collapse: collapse;
                 }
+#copyrights {
+	color:DarkRed;
+        font-family:"impact","porcine";
+        text-align: center;
+	}
+.time {
+	background-color:#b1cffd;
+        font-family:"Courier New","Lucida Console";
+	}
+.price {
+	background-color:#b1cffd;
+        font-family:"Courier New","Lucida Console";
+	font-weight:bold;
+	}
