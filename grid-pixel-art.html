@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>21x21 Grid with CSS Grid</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(21, 1fr);
+      grid-template-rows: repeat(21, 1fr);
+      width: 100vmin;
+      height: 100vmin;
+      margin:auto;
+    }
+
+    .grid-container div {
+      background-color:pink;
+      border: 1px solid #fff; /* Optional border for better visual separation */
+    }
+
+    /* Color specific squares */
+    .grid-container div:nth-child(1),
+    .grid-container div:nth-child(5),
+    .grid-container div:nth-child(7){
+        background-color:black;
+    }
+    
+    /* Color every even square */
+    .grid-container div:nth-child(even) {
+      background-color:red;
+    }
+
+    /* Color every 3rd square */
+    .grid-container div:nth-child(3n) {
+      background-color:blue;
+    }
+/* All of the white backgrounds */
+.grid-container div:nth-child(n+1):nth-child(-n+21) {background-color:#fff;}
+.grid-container div:nth-child(n+22):nth-child(-n+26) {background-color:#fff;}
+.grid-container div:nth-child(n+38):nth-child(-n+42) {background-color:#fff;}
+.grid-container div:nth-child(n+43):nth-child(-n+47) {background-color:#fff;}
+.grid-container div:nth-child(n+59):nth-child(-n+63) {background-color:#fff;}
+.grid-container div:nth-child(n+64):nth-child(-n+68) {background-color:#fff;}
+.grid-container div:nth-child(n+80):nth-child(-n+84) {background-color:#fff;}
+.grid-container div:nth-child(n+85):nth-child(-n+89) {background-color:#fff;}
+.grid-container div:nth-child(n+101):nth-child(-n+105) {background-color:#fff;}
+.grid-container div:nth-child(n+106):nth-child(-n+109) {background-color:#fff;}
+.grid-container div:nth-child(n+123):nth-child(-n+126) {background-color:#fff;}
+.grid-container div:nth-child(n+127):nth-child(-n+129) {background-color:#fff;}
+.grid-container div:nth-child(n+145):nth-child(-n+147) {background-color:#fff;}
+.grid-container div:nth-child(n+148):nth-child(-n+149) {background-color:#fff;}
+.grid-container div:nth-child(n+167):nth-child(-n+168) {background-color:#fff;}
+.grid-container div:nth-child(n+169):nth-child(-n+170) {background-color:#fff;}
+.grid-container div:nth-child(n+188):nth-child(-n+189) {background-color:#fff;}
+.grid-container div:nth-child(n+190):nth-child(-n+191) {background-color:#fff;}
+.grid-container div:nth-child(n+209):nth-child(-n+210) {background-color:#fff;}
+.grid-container div:nth-child(n+211):nth-child(-n+212) {background-color:#fff;}
+.grid-container div:nth-child(n+230):nth-child(-n+231) {background-color:#fff;}
+.grid-container div:nth-child(n+232):nth-child(-n+233) {background-color:#fff;}
+.grid-container div:nth-child(n+251):nth-child(-n+252) {background-color:#fff;}
+.grid-container div:nth-child(n+253):nth-child(-n+254) {background-color:#fff;}
+.grid-container div:nth-child(n+272):nth-child(-n+273) {background-color:#fff;}
+.grid-container div:nth-child(n+274):nth-child(-n+275) {background-color:#fff;}
+.grid-container div:nth-child(n+293):nth-child(-n+294) {background-color:#fff;}
+.grid-container div:nth-child(n+295):nth-child(-n+296) {background-color:#fff;}
+.grid-container div:nth-child(n+314):nth-child(-n+315) {background-color:#fff;}
+.grid-container div:nth-child(n+316):nth-child(-n+317) {background-color:#fff;}
+.grid-container div:nth-child(n+335):nth-child(-n+336) {background-color:#fff;}
+.grid-container div:nth-child(n+337):nth-child(-n+338) {background-color:#fff;}
+.grid-container div:nth-child(n+356):nth-child(-n+357) {background-color:#fff;}
+.grid-container div:nth-child(n+358):nth-child(-n+359) {background-color:#fff;}
+.grid-container div:nth-child(n+377):nth-child(-n+378) {background-color:#fff;}
+.grid-container div:nth-child(n+379):nth-child(-n+380) {background-color:#fff;}
+.grid-container div:nth-child(n+398):nth-child(-n+399) {background-color:#fff;}
+.grid-container div:nth-child(n+400):nth-child(-n+401) {background-color:#fff;}
+.grid-container div:nth-child(n+419):nth-child(-n+420) {background-color:#fff;}
+.grid-container div:nth-child(n+421):nth-child(-n+441) {background-color:#fff;}
+
+/* All of the blue backgrounds */
+.grid-container div:nth-child(n+27):nth-child(-n+37) {background-color:#5b79ec;}
+.grid-container div:nth-child(48),
+    .grid-container div:nth-child(58),
+    .grid-container div:nth-child(69),
+    .grid-container div:nth-child(79) {
+        background-color:#5b79ec;} 
+.grid-container div:nth-child(n+90):nth-child(-n+100) {background-color:#5b79ec;}
+.grid-container div:nth-child(n+110):nth-child(-n+122) {background-color:#5b79ec;}
+.grid-container div:nth-child(n+130):nth-child(-n+144) {background-color:#5b79ec;}
+.grid-container div:nth-child(n+150):nth-child(-n+152) {background-color:#5b79ec;} 
+.grid-container div:nth-child(n+160):nth-child(-n+161) {background-color:#5b79ec;}
+.grid-container div:nth-child(n+165):nth-child(-n+166) {background-color:#5b79ec;}  
+.grid-container div:nth-child(154), .grid-container div:nth-child(156),.grid-container div:nth-child(158), .grid-container div:nth-child(163) {background-color:#5b79ec;}
+
+
+/* "MILK" white */
+.grid-container div:nth-child(153),
+    .grid-container div:nth-child(155),
+    .grid-container div:nth-child(157),
+.grid-container div:nth-child(159),
+.grid-container div:nth-child(162),
+.grid-container div:nth-child(164)
+ {background-color:white;}
+    /*
+        We can use this syntax to select a range:
+        - `div:nth-child(n+41)`: Selects all `div` elements that are the 41st child or later.
+        - `:nth-child(-n+50)`: Selects all `div` elements that are the 50th child or earlier.
+    */
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <!-- 100 divs -->
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div> 
+ </div>
+</body>
+</html>
