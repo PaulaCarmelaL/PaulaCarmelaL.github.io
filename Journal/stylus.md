@@ -1,9 +1,9 @@
 # This is my Stylus Project 
 
-![This is an image](file:///Users/995384/Desktop/website/image/stylus_1.png)
-![This is an image](file:///Users/995384/Desktop/website/image/stylus_2.png)
+![This is an image](website/stylus_1)
+![This is an image](webiste/stylus_2)
 
-- [Link](chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit.html?id=1)
+- [Link](website/stylus.css)
 
 
 
