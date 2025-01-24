@@ -1,9 +1,9 @@
 # This is my Stylus Project 
 
-![This is an image](website/stylus_1)
-![This is an image](webiste/stylus_2)
+![This is an image](stylus_1.png)
+![This is an image](stylus_2.png)
 
-- [Link](website/stylus.css)
+- [Link](stylus.css)
 
 
 
