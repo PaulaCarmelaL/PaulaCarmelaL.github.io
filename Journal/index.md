@@ -7,7 +7,8 @@ In my journal, i will write about:
 # Here are my journal entries
 
 - [My journey learning the terminal](terminal.md)
-- [My WordPress Reflection](wordpress.md) 
+- [My WordPress Reflection](wordpress.md)
+- [Stylus Project](stylus.md) 
 - [Math notes](entries/math_notes.md)
 - [More markdown](entries/more_markdown.md)
  
