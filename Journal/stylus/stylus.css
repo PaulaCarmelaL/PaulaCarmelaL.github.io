@@ -1,0 +1,54 @@
+@-moz-document domain("arlingtonva.us") {
+.apl-alert-messages.alert-cv {
+    background: #FFB6C1;
+    /* background: #005cbb; */
+    /* background: #2e8be8; */
+    color: #fff !important;
+}
+.apl-kickstart-custom #acg-tophat {
+    background-color: #FFC0CB;
+    background-color: #DB7093;
+    min-height: 29px;
+    font-size: 10px;
+    height: 45px;
+    line-height: 1 !important;
+}
+@media only screen and (max-width: 900px) {
+    .menu-toggle, .sub-menu-toggle {
+        color: #FFB6C1;
+        display: block;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 13px 24px;
+        text-align: center;
+        visibility: visible !important;
+    }
+}
+.fl-node-5ec55d49766d7 > .fl-row-content-wrap {
+    background-color: #FFB6C1 !important;
+}
+body.apl-kickstart-custom {
+    border-top: none;
+    font-family: 'Courier', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+.apl-kickstart-custom .footer-widgets, .apl-kickstart-custom .footer-social, .apl-kickstart-custom .site-footer {
+    /* background-color: #101820; */
+    background-color: #FFC0CB !important;
+    /* background-color: #34393e; */
+    /* background-color: #333F48; */
+}
+.site-footer {
+    /* background-color: #34393e; */
+    color: #F0F8FF;
+    font-size: 12px;
+    padding: 40px 0;
+    text-align: center !important;
+}
+@media only screen and (max-width: 1023px) {
+    body {
+        background-color: #FFE4E1 !important;
+    }
+}
+body {
+    margin: auto !important;
+}
