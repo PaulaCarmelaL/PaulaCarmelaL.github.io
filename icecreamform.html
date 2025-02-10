@@ -6,19 +6,19 @@
         </head>
         <body>
 		<h1>You're invited to an Ice Cream Party!</h1> 
-		<form action"https://httpbin.org/post" method="POST">
+		<form action="https://httpbin.org/post" method="POST">
 			<label for="email">What is your email address?</label>
-			<input type"email" id="email" placeholder="your email" name="email">
+			<input type="email" id="email" placeholder="your email" name="email">
 
 		        <label for="phone">What is your phone number?</label>
-			<input type="phone" id="phone" placeholder="your phone number" name="phone">
+			<input type="tel" id="phone" placeholder="your phone number" name="phone">
 			<label for="people">How many people will you bring with you to the party?</label>
 			<input type="number" id="people" placeholder="number of people" name="people">
 			<p>What is your favorite flavor of ice cream?</p>
 			<label for="Vanilla">Vanilla</label>
 			<input type="radio" id="Vanilla" name="flavor" value="Vanilla" required>
-			<label for="Chocolate Chip">Chocolate Chip</label>
-                        <input type="radio" id="Chocolate Chip" name="flavor" value="Chocolate Chip" required>
+			<label for="Chip">Chocolate Chip</label>
+                        <input type="radio" id="Chip" name="flavor" value="Chip" required>
 			<label for="Strawberry">Strawberry</label>
                         <input type="radio" id="Strawberry" name="flavor" value="Strawberry" required>
 			<label for="Other">Other</label>
@@ -27,33 +27,34 @@
 			<p>Which toppings do you like?</p>
 			<label for="Sprinkles">Sprinkles</label>
 			<input type="checkbox" id="Sprinkles" name="Sprinkles">
-			<label for="Magic Shell">Magic Shell</label>
-                        <input type="checkbox" id="Magic Shell" name="Magic Shell">
-			<label for="Chocolate Chip">Chocolate Chip</label>
-                        <input type="checkbox" id="Chocolate Chip" name="Chocolate Chip">
-			<label for="Gummy Bears">Gummy Bears</label>
-                        <input type="checkbox" id="Gummy Bears" name="Gummy Bears">
+			<label for="Magic">Magic Shell</label>
+                        <input type="checkbox" id="Magic" name="Magic">
+			<label for="Chip">Chocolate Chip</label>
+                        <input type="checkbox" id="Chocolate" name="Chip">
+			<label for="Gummy">Gummy Bears</label>
+                        <input type="checkbox" id="Gummy" name="Gummy">
 			<label for="Other">Other</label>
-                        <input type="checkbox" id="Other" name="Other">
+                        <input type="checkbox" id="else" name="Other">
 			
 			<p>What kind of entertainment should we have at the party?</p>
 			<label for="entertainment">Entertainment:</label>
 			<select id="entertainment" name="entertainment">
-				<option value="ballon animals">Ballon Animal</option>
-				<option value="bounce house">Bounce House</option>
+				<option value="ballon">Ballon Animal</option>
+				<option value="house">Bounce House</option>
 				<option value="clown">Clown</option>
 				<option value="cornhole">Cornhole</option>
 				<option value="DJ">DJ</option>
-				<option value="face painting">Face Painting</option>
+				<option value="painting">Face Painting</option>
 				<option value="Magician">Magician</option>
-				<option value="ballon animals">Ballon Animal</option>
+				<option value="animals">Ballon Animal</option>
 			</select>
+			<br>
+			<label for="com">Do you have any other suggestions or comments?</label><br>
+                        <textarea id="com" name="com" rows="4" cols="50"></textarea>
 
-			<label for="comments">Do you have any other suggestions or comments?</label>
-                        <input type="comments" id="comments" placeholder="comments" name="comments">
-
-			<input type="submit" name="submit">
+			<input type="submit" value="submit">
 			<input type="reset" value="Reset">
+	</form>
         </body>
 
 </html>
