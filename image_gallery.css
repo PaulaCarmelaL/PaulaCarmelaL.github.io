@@ -1,8 +1,12 @@
 
 #M {
-	width: 300px;
-	height: 250px;
+	width: 170px;
+	height: 120px;
 	border: 2px solid #000;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
 }
 #U {
 	width: 250px;
