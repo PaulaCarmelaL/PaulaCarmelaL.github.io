@@ -3,8 +3,8 @@
 [Link to website](https://tai-yuwang.github.io/Best_Table.github.io/group_2/index.html)
 [Link to repo](https://github.com/Tai-YuWang/Best_Table.github.io)
 
-![Image of main page](image/Index.png)
-![Image of main page](image/reservation.png)
+![Image of main page](../../image/Index.png)
+![Image of main page](../../image/reservation.png)
  
 ### My form was the reservation form to help manage the tables faster. My request method was POST and I used... 
 
