@@ -82,3 +82,14 @@ blockquote {
         grid-row-start:6;
         grid-row-end:7;
 }
+.color-change {
+    background-color: #c8887c;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.color-change:hover {
+    background-color:"white";
+}
