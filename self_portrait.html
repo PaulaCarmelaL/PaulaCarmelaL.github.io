@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <title>Self Portrait</title>
+                <script src="js/init.js"></script>
+                <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" >
+		<style>
+        	canvas{
+           	 	display:block;
+            		border:1px solid;
+            		margin:auto;
+            		margin-top:50px
+       			 }
+    		</style>
+        </head>
+	<body>
+		<canvas id="myCanvas" width="400" height="400"></canvas>
+  
+  		<script>
+    			const canvas = document.getElementById("myCanvas");
+    			const ctx = canvas.getContext("2d");
+
+    			//background
+   	 		ctx.fillStyle = "#ADD8E6";
+    			ctx.fillRect(0,0,400,400);
+
+			//shirt, using hex colors
+    			ctx.fillStyle = "#000080";
+    			ctx.fillRect(115, 225, 175, 175);
+
+			//shoulders
+			ctx.fillStyle = "#000080";
+			ctx.fillRect(70, 225, 50, 100);
+			ctx.fillStyle = "#000080";
+                        ctx.fillRect(280, 225, 50, 100);
+
+			//face 
+			ctx.fillStyle='lemonchiffon';
+   			ctx.beginPath();
+    			ctx.ellipse(200,150,75,75,0.25*Math.PI,0,2*Math.PI);
+    			ctx.fill();
+			
+			ctx.fillStyle="black";
+                        ctx.beginPath();
+                        ctx.ellipse(175,130,10,10,0.25*Math.PI,0,2*Math.PI);
+                        ctx.fill();
+
+			 ctx.fillStyle="black";
+                        ctx.beginPath();     
+                        ctx.ellipse(230,130,10,10,0.25*Math.PI,0,2*Math.PI);
+                        ctx.fill();
+
+			ctx.strokeStyle = "#e76a6a";
+			ctx.fillStyle="#f98787"
+    			ctx.lineWidth=5;
+    			ctx.beginPath();
+    			ctx.arc(200,170,15,0,Math.PI);
+    			ctx.stroke();
+    			ctx.fill();
+
+			//hair 
+			ctx.fillStyle = "black";
+                        ctx.fillRect(138, 70, 125, 35)
+			ctx.fillStyle = "black";
+                        ctx.fillRect(120, 70, 35, 180)
+			ctx.fillStyle = "black";
+                        ctx.fillRect(250, 70, 35, 180)
+  		</script>
+	</body>
+</html>
