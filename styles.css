@@ -37,7 +37,7 @@ blockquote {
 	}
 #journal, #projects {
     font-family: "times new roman";
-    font-size: 20px;
+    font-size: 25px;
     grid-column-start: 1;
     grid-column-end: 6;
     display: block;
