@@ -13,7 +13,7 @@ html {
 header {
 	font-size:20px;
 	font-family: "courier new";
-	color:#c37a6d;
+	color:#000000;
 	grid-column-start:1; 
 	grid-column-end:9;
 	grid-row-start:1;
