@@ -52,8 +52,8 @@ blockquote {
 }
 
 #journal:hover, #projects:hover {
-    background-color: #e9d9d6; /* New background color on hover */
-    color: #c37a6d; /* New text color on hover */
+    background-color: #6E86A9; /* New background color on hover */
+    color: #000000; /* New text color on hover */
 }
 
 #me {
