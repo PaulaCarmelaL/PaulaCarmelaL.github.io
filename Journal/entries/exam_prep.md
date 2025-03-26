@@ -59,4 +59,14 @@ We'll use this to inform our study plan for the test.
 
 ## Study Plan
 
-(We'll start filling this part in next class)
+### I worked on sections 4.3 Implement field grouping with fieldset and legend tags and 4.2 GET v. POST. 
+
+#### LINKS: 
+	- [Fieldset and Legends](fieldsetandlegends.html)
+	- [GET v. POST](getandpost.html)
+
+### Practice builds familiarity, making a topics easier to understand and boosting confidence in tackling it.  
+
+## new grades 
+### 4.2 Discuss form submission methods (GET vs. POST) and their appropriate use cases. GRADE:B
+### 4.3 Implement field grouping with fieldset and legend tags for enhanced form usability and use form-specific attributes to customize form behavior and appearance (value, placeholder, disabled, readonly). GRADE:C
