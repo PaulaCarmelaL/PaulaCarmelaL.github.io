@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Fieldset and Legend</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <!-- Grouping fields for personal information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+        </fieldset>
+
+        <!-- Grouping fields for account details -->
+        <fieldset>
+            <legend>Account Details</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="readonly-info">Read-Only Info:</label>
+            <input type="text" id="readonly-info" name="readonly-info" value="Read-only content" readonly>
+
+            <label for="disabled-field">Disabled Field:</label>
+            <input type="text" id="disabled-field" name="disabled-field" placeholder="Disabled" disabled>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
