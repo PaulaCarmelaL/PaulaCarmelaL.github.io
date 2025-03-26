@@ -62,8 +62,8 @@ We'll use this to inform our study plan for the test.
 ### I worked on sections 4.3 Implement field grouping with fieldset and legend tags and 4.2 GET v. POST. 
 
 #### LINKS: 
-	- [Fieldset and Legends](fieldsetandlegends.html)
-	- [GET v. POST](getandpost.html)
+	- [Fieldset and Legends](../fieldsetandlegends.html)
+	- [GET v. POST](../getandpost.html)
 
 ### Practice builds familiarity, making a topics easier to understand and boosting confidence in tackling it.  
 
