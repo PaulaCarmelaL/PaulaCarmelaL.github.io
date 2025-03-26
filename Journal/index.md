@@ -12,4 +12,5 @@ In my journal, i will write about:
 - [Math notes](entries/math_notes.md)
 - [More markdown](entries/more_markdown.md)
 - [Off the Pike ](entries/offthepike.md)
+- [EXAM PREP](entries/exam_prep.md)
  
