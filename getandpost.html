@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission Example</title>
+</head>
+<body>
+    <h1>Form Submission Methods</h1>
+    
+    <!-- GET method example -->
+    <form action="/search" method="get">
+        <fieldset>
+            <legend>Search Form (GET)</legend>
+            <label for="query">Search Query:</label>
+            <input type="text" id="query" name="query" placeholder="Enter your search terms">
+            <button type="submit">Search</button>
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <!-- POST method example -->
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Registration Form (POST)</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</body>
+</html>
+
