@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Self Portrait</title>
+    <script src="js/init.js"></script>
+    <style>
+        canvas{
+            display:block;
+            border:1px solid;
+            margin:auto;
+            margin-top:50px
+        }
+    </style>
+</head>
+<body>
+
+<canvas id="myCanvas" width="400" height="400"></canvas>
+  
+<script>
+	const canvas = document.getElementById("myCanvas");
+	const ctx = canvas.getContext("2d");
+
+function drawCircle(x, y, radius, color) {
+    ctx.beginPath();
+    ctx.arc(x, y, radius, 0, Math.PI * 2); 
+    ctx.fillStyle = color;
+    ctx.fill(); 
+    ctx.closePath();
+}
+
+drawCircle(100, 100, 50, "red");   
+drawCircle(300, 100, 50, "blue");   
+drawCircle(200, 200, 50, "green");  
+drawCircle(100, 300, 50, "yellow"); 
+drawCircle(300, 300, 50, "purple"); 
+</script>
