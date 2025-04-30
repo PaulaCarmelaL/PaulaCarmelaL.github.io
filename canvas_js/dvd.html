@@ -28,29 +28,123 @@
         let dx = 4;  
         let dy = 5.3; 
 
+	//this is an object 
+	//we access values in an object like this:
+	//player.x
+	const player = {
+ 		//key:value pair
+    		x: 0,
+    		y: 0,
+    		color: 'green',
+   	 	speed: 3,
+	};
+
+
         function drawRect(x, y) {
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             ctx.fillStyle = 'blue';
             ctx.fillRect(x, y, 50, 50);
         }
+		
+	function drawPlayer() {
+		ctx.fillStyle = player.color;
+		ctx.beginPath();
+		ctx.arc(
+        		player.x,
+        		player.y,
+        		20,
+        		0,
+        		2 * Math.PI
+    		);
+    		ctx.fill(); 
+		}	
+
+	function movePlayer(){
+		//palyer.x = player.x + player.speed;
+		//player.x += player.speed;
+		if (keys['ArrowUp']) {
+    			player.y -= player.speed; // Move player up
+		}		
+		if (keys['ArrowDown']) {
+    			player.y += player.speed; // Move player down
+		}
+		if (keys['ArrowLeft']) {
+    			player.x -= player.speed; // Move player left
+		}
+		if (keys['ArrowRight']) {
+    			player.x += player.speed; // Move player right
+		}
 
         // Animation function
         function animate() {
-            x = x+dx;
-            y = y+dy;
+	    	x = x + dx;
+   		y = y + dy;
 
-            if (x > 350 || x < 0) {
-                dx = dx * -1
-            }
-            if (y > 350 || y < 0) {
-                dy = dy * -1
-            }
+    		if (x > 350 || x < 0) {
+        		dx = dx * -1;
+    		}	
+    		if (y > 350 || y < 0) {
+        		dy = dy * -1;
+    		}
 
-            drawRect(x, y);
-            requestAnimationFrame(animate);
+    		ctx.clearRect(0, 0, canvas.width, canvas.height); 
+		drawRect(x, y); 
+    		drawPlayer();   
+    		requestAnimationFrame(animate);
+		}
+	
+	const keys = {};
+
+	function handleKeyPress(e){
+                //console.log(e.key); 
+		keys[e.key] = true;
         }
+	
+	//2 inputs: what type of event, a function to call) 
+	document.addEventListener('keydown', handleKeyPress);
+	document.addEventListener('keyup', (e) => {
+		console.log(e.key + " up");
+		keys[e.key] = false;
+	});
+	
+	let score = 0;
+	let frameCount = 0;
+	let isGameActive = true;
 
-        animate();
+	function animate() {
+    		if (!isGameActive) return;
+
+    	frameCount++;
+    		if (frameCount > 1000) isGameActive = false; // Ends game after 1000 frames
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    movePlayer();
+    drawPlayer();
+    
+    requestAnimationFrame(animate);
+}
+
+		if (player.x < 0 || player.x > canvas.width || player.y < 0 || player.y > canvas.height) {
+    player.x = Math.random() * canvas.width;
+    player.y = Math.random() * canvas.height;
+}
+
+	function isColliding(obj1, obj2) {
+	    return (
+        obj1.x < obj2.x + obj2.width &&
+        obj1.x + obj1.width > obj2.x &&
+        obj1.y < obj2.y + obj2.height &&
+        obj1.y + obj1.height > obj2.y
+    );
+}
+	let randomSpeed = Math.random() * 5 + 1;  // Random speed between 1 and 6
+	let randomColor = `rgb(${Math.random()*255}, ${Math.random()*255}, ${Math.random()*255})`;
+
+player.speed = randomSpeed;
+player.color = randomColor;
+
+	//call our function
+	animate();
     </script>
 </body>
 </html>
