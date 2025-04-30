@@ -27,6 +27,8 @@ let x = 0;
 let dx = 5;
 let y = 0;
 let dy =1; 
+let score=0;
+let gameRunning = true;
 
 //this is an object
 //we access values in an object like  this:
@@ -54,7 +56,6 @@ function drawRect(x,y) {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.fillStyle = 'blue';
     ctx.fillRect(x,y,50,50);
-    ctx.fill();
 }
 
 function drawPlayer(){
@@ -92,9 +93,20 @@ function movePlayer(){
     }
 }
 
+function drawScore(){
+	ctx.font="10px Arial";
+	ctx.fillText(score, 10, 10);
+}
 
 function animate() {
+
+if(gameRunning){
+	score++;
+	if (score >= 200){
+		gameRunning = false;
+}
     drawRect(x,y);
+drawScore();
     movePlayer();
     drawPlayer();
 
@@ -121,7 +133,7 @@ function animate() {
     //this schedules the next call of this function for 1/60
     //of a second from now
     requestAnimationFrame(animate);
-}
+
 
 //This is the "event listner" that we'll attach to the DOM
 //it automatically receives an input, e, which is the event
@@ -145,6 +157,8 @@ document.addEventListener('keyup', (e) => {
 //call our animate function the first time
 //after this first run, requestAnimationFrame() will
 //take over
+}
+}
 animate();
      </script> 
 </body>
