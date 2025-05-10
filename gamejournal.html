@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Soccer Game Concept Art</title>
+    <script>
+        window.onload = function() {
+            let canvas = document.getElementById("gameCanvas");
+            let ctx = canvas.getContext("2d");
+
+            // Background (Soccer Field)
+            ctx.fillStyle = "#00AA00";  // Green field
+            ctx.fillRect(0, 0, 500, 300);
+
+            // Goalpost
+            ctx.fillStyle = "#FFFFFF";  // White goalpost
+            ctx.fillRect(450, 100, 30, 100);
+
+            // Player character
+            ctx.fillStyle = "#FF0000";  // Red player
+            ctx.fillRect(100, 150, 30, 50);
+
+            // Opponent character
+            ctx.fillStyle = "#0000FF";  // Blue opponent
+            ctx.fillRect(300, 140, 30, 50);
+
+            // Soccer ball
+            ctx.fillStyle = "#FFFFFF";  // Ball
+            ctx.beginPath();
+            ctx.arc(200, 170, 10, 0, Math.PI * 2, true);
+            ctx.fill();
+        };
+    </script>
+</head>
+<body>
+    <canvas id="gameCanvas" width="500" height="300"></canvas>
+</body>
+</html>
