@@ -19,3 +19,8 @@ The game will be a **sports simulation** focusing on soccer, with an emphasis on
 - Basic **AI-controlled opponents** with defensive behavior.
 - A **timer** and **score tracker** displayed on the screen.
 - Simple environmental assets, including a **soccer field** and **goalposts**.
+
+## Concept Art
+Below is a representation of a single frame of the game rendered in an HTML/JS canvas.
+- [Game Picture](gamejournal.html)
+
