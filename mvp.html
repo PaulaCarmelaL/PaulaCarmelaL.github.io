@@ -65,11 +65,24 @@
             ctx.fill();
         };
 
+	 let ballX = 200, ballY = 170;
+            drawGame(ballX, ballY); // Initial drawing
+
         let score = 0;
 
         document.getElementById("kickButton").addEventListener("click", function() {
             let goal = Math.random() < 0.5; // 50% chance of scoring
-            if (goal) {
+          
+		// Animate ball moving toward the goal
+                let animationInterval = setInterval(() => {
+                    ballX += 5; 
+                    ballY -= 2;
+                    drawGame(ballX, ballY);
+                    
+                    if (ballX >= 450) { // Ball reaches the goal
+                        clearInterval(animationInterval);
+
+		  if (goal) {
                 score++;
                 document.getElementById("result").textContent = "GOAL! 🎉";
             } else {
