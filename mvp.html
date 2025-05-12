@@ -90,11 +90,21 @@
             }
             document.getElementById("score").textContent = score;
 
+		// Reset ball position for next kick
+                        setTimeout(() => {
+                            ballX = 200;
+                            ballY = 170;
+                            drawGame(ballX, ballY);
+                        }, 1000);
+
             if (score >= 5) {
                 document.getElementById("result").textContent = "Game Over! You won!";
                 document.getElementById("kickButton").disabled = true;
-            }
-        });
+             }
+                    }
+                }, 30);
+            });
+        };
     </script>
 </body>
 </html>
