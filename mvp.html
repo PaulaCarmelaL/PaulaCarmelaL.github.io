@@ -26,81 +26,100 @@
     </style>
 </head>
 <body>
-	<canvas id="gameCanvas" width="500" height="300"></canvas>
+    <canvas id="gameCanvas" width="500" height="300"></canvas>
     <h1>Soccer Scoring Game</h1>
-    <p>Press the button to kick and score a goal!</p>
+    <p>Press the button to kick and score a goal! Move the opponent with the arrow keys to block the ball.</p>
     <button id="kickButton">Kick the Ball</button>
     <p id="result"></p>
     <p>Score: <span id="score">0</span></p>
 
     <script>
-	 window.onload = function() {
+        window.onload = function() {
             let canvas = document.getElementById("gameCanvas");
             let ctx = canvas.getContext("2d");
 
-	// Function to draw the game elements
-            function drawGame(ballX, ballY) {
+            let ballX = 200, ballY = 170;
+            let opponentY = 140; // Initial position of the opponent
+            let score = 0;
+
+            function drawGame() {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-            // Background (Soccer Field)
-            ctx.fillStyle = "#00AA00";  // Green field
-            ctx.fillRect(0, 0, 500, 300);
+                // Background (Soccer Field)
+                ctx.fillStyle = "#00AA00";  
+                ctx.fillRect(0, 0, 500, 300);
 
-            // Goalpost
-            ctx.fillStyle = "#FFFFFF";  // White goalpost
-            ctx.fillRect(450, 100, 30, 100);
+                // Goalpost
+                ctx.fillStyle = "#FFFFFF";  
+                ctx.fillRect(450, 100, 30, 100);
 
-            // Player character
-            ctx.fillStyle = "#FF0000";  // Red player
-            ctx.fillRect(100, 150, 30, 50);
+                // Player character
+                ctx.fillStyle = "#FF0000";  
+                ctx.fillRect(100, 150, 30, 50);
 
-            // Opponent character
-            ctx.fillStyle = "#0000FF";  // Blue opponent
-            ctx.fillRect(300, 140, 30, 50);
+                // Opponent character
+                ctx.fillStyle = "#0000FF";  
+                ctx.fillRect(300, opponentY, 30, 50);
 
-            // Soccer ball
-            ctx.fillStyle = "#FFFFFF";  // Ball
-            ctx.beginPath();
-            ctx.arc(200, 170, 10, 0, Math.PI * 2, true);
-            ctx.fill();
-        };
+                // Soccer ball
+                ctx.fillStyle = "#FFFFFF";  
+                ctx.beginPath();
+                ctx.arc(ballX, ballY, 10, 0, Math.PI * 2, true);
+                ctx.fill();
+            }
 
-	 let ballX = 200, ballY = 170;
-            drawGame(ballX, ballY); // Initial drawing
+            drawGame(); // Initial drawing
 
-        let score = 0;
+            document.addEventListener("keydown", function(event) {
+                if (event.key === "ArrowUp" && opponentY > 10) {
+                    opponentY -= 10;
+                } else if (event.key === "ArrowDown" && opponentY < 240) { // Limits movement
+                    opponentY += 10;
+                }
+                drawGame();
+            });
 
-        document.getElementById("kickButton").addEventListener("click", function() {
-            let goal = Math.random() < 0.5; // 50% chance of scoring
-          
-		// Animate ball moving toward the goal
+            document.getElementById("kickButton").addEventListener("click", function() {
+                let goal = Math.random() < 0.5; // 50% chance of scoring
+
                 let animationInterval = setInterval(() => {
                     ballX += 5; 
                     ballY -= 2;
-                    drawGame(ballX, ballY);
-                    
-                    if (ballX >= 450) { // Ball reaches the goal
+                    drawGame();
+
+                    // Collision detection with opponent
+                    if (ballX >= 300 && ballX <= 330 && ballY >= opponentY && ballY <= opponentY + 50) {
                         clearInterval(animationInterval);
-
-		  if (goal) {
-                score++;
-                document.getElementById("result").textContent = "GOAL! 🎉";
-            } else {
-                document.getElementById("result").textContent = "Missed! 😢";
-            }
-            document.getElementById("score").textContent = score;
-
-		// Reset ball position for next kick
+                        document.getElementById("result").textContent = "Blocked by opponent! ⚽";
                         setTimeout(() => {
                             ballX = 200;
                             ballY = 170;
-                            drawGame(ballX, ballY);
+                            drawGame();
+                        }, 1000);
+                        return;
+                    }
+
+                    if (ballX >= 450) { // Ball reaches the goal
+                        clearInterval(animationInterval);
+
+                        if (goal) {
+                            score++;
+                            document.getElementById("result").textContent = "GOAL! 🎉";
+                        } else {
+                            document.getElementById("result").textContent = "Missed! 😢";
+                        }
+                        document.getElementById("score").textContent = score;
+
+                        setTimeout(() => {
+                            ballX = 200;
+                            ballY = 170;
+                            drawGame();
                         }, 1000);
 
-            if (score >= 5) {
-                document.getElementById("result").textContent = "Game Over! You won!";
-                document.getElementById("kickButton").disabled = true;
-             }
+                        if (score >= 5) {
+                            document.getElementById("result").textContent = "Game Over! You won!";
+                            document.getElementById("kickButton").disabled = true;
+                        }
                     }
                 }, 30);
             });
