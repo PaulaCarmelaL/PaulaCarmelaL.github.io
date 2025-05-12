@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Scoring Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #2E8B57;
+            color: white;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px;
+            background-color: #FFD700;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soccer Scoring Game</h1>
+    <p>Press the button to kick and score a goal!</p>
+    <button id="kickButton">Kick the Ball</button>
+    <p id="result"></p>
+    <p>Score: <span id="score">0</span></p>
+
+    <script>
+        let score = 0;
+
+        document.getElementById("kickButton").addEventListener("click", function() {
+            let goal = Math.random() < 0.5; // 50% chance of scoring
+            if (goal) {
+                score++;
+                document.getElementById("result").textContent = "GOAL! 🎉";
+            } else {
+                document.getElementById("result").textContent = "Missed! 😢";
+            }
+            document.getElementById("score").textContent = score;
+
+            if (score >= 5) {
+                document.getElementById("result").textContent = "Game Over! You won!";
+                document.getElementById("kickButton").disabled = true;
+            }
+        });
+    </script>
+</body>
+</html>
+
