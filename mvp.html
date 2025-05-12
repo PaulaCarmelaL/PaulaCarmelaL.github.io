@@ -26,6 +26,7 @@
     </style>
 </head>
 <body>
+	<canvas id="gameCanvas" width="500" height="300"></canvas>
     <h1>Soccer Scoring Game</h1>
     <p>Press the button to kick and score a goal!</p>
     <button id="kickButton">Kick the Ball</button>
@@ -33,6 +34,37 @@
     <p>Score: <span id="score">0</span></p>
 
     <script>
+	 window.onload = function() {
+            let canvas = document.getElementById("gameCanvas");
+            let ctx = canvas.getContext("2d");
+
+	// Function to draw the game elements
+            function drawGame(ballX, ballY) {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // Background (Soccer Field)
+            ctx.fillStyle = "#00AA00";  // Green field
+            ctx.fillRect(0, 0, 500, 300);
+
+            // Goalpost
+            ctx.fillStyle = "#FFFFFF";  // White goalpost
+            ctx.fillRect(450, 100, 30, 100);
+
+            // Player character
+            ctx.fillStyle = "#FF0000";  // Red player
+            ctx.fillRect(100, 150, 30, 50);
+
+            // Opponent character
+            ctx.fillStyle = "#0000FF";  // Blue opponent
+            ctx.fillRect(300, 140, 30, 50);
+
+            // Soccer ball
+            ctx.fillStyle = "#FFFFFF";  // Ball
+            ctx.beginPath();
+            ctx.arc(200, 170, 10, 0, Math.PI * 2, true);
+            ctx.fill();
+        };
+
         let score = 0;
 
         document.getElementById("kickButton").addEventListener("click", function() {
